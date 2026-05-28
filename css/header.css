@@ -1,11 +1,17 @@
 header {
   background-color: var(--background-tertiary-color);
+  position: relative;
+}
+
+.header-content {
+  max-width: 1600px;
+  margin-inline: auto;
+  padding: 38px 48px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 38px 48px;
-  position: relative;
 }
 
 .logo {
@@ -81,17 +87,19 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
-  header {
-    padding: 38px 120px;
+  .header-container {
+    padding-inline: 120px;
   }
 
   .logo {
     width: 260px;
     height: 64px;
   }
+
   .img-desktop {
     display: block;
   }
+
   .img-mobile {
     display: none;
   }
@@ -102,7 +110,13 @@ nav {
 }
 
 @media screen and (min-width: 1920px) {
-  header {
-    padding: 38px 160px;
+  .header-container {
+    padding-inline: 160px;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .header-container {
+    padding-inline: 0;
   }
 }
