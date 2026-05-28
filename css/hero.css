@@ -4,22 +4,66 @@
   background-image: url(../img/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 1600px;
+  margin-inline: auto;
+}
+
+.hero h2 {
+  padding: 88px 24px;
+  margin: 0;
+  font-weight: var(--text-weight);
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
   .hero-img {
-    height: 620px;
+    height: clamp(500px, 60vw, 620px);
     background-image: url(../img/hero-tablet.png);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+  }
+
+  .hero h2 {
+    padding: 88px 60px;
+    font-size: 32px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .hero-img {
-    height: 620px;
+    height: clamp(500px, 45vw, 620px);
     background-image: url(../img/hero-desktop.png);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+  }
+
+  .hero h2 {
+    padding-inline: 120px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .hero h2 {
+    padding-inline: 160px;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .hero h2 {
+    padding-inline: 0;
+  }
+
+  .hero-img {
+    height: clamp(420px, 24vw, 560px);
+    background-image: url(../img/hero-ultrawide.jpg);
+    background-size: cover;
+    background-position: center;
   }
 }
