@@ -1,0 +1,158 @@
+.categories {
+  margin-top: 64px;
+}
+
+.section-title-categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title-categories h2 {
+  max-width: 220px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: var(--titles-weight);
+  margin: 0;
+}
+
+.section-title-categories hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--secundary-color);
+  border: none;
+  margin: 16px auto 32px;
+}
+
+.categories-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.card-pacotes {
+  background-color: var(--background-secundary-color);
+  width: 312px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.category-link {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories-header {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.categories-header img {
+  width: 60px;
+  height: auto;
+}
+
+.categories-header p {
+  font-weight: var(--titles-weight);
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  max-width: 180px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .section-title-categories h2 {
+    max-width: none;
+    font-size: 28px;
+    font-weight: var(--titles-weight);
+  }
+
+  .categories-cards {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 18px;
+  }
+
+  .card-pacotes {
+    width: 247px;
+    height: 173px;
+  }
+
+  .categories-header {
+    gap: 16px;
+  }
+
+  .categories-header img {
+    width: 50px;
+  }
+
+  .categories-header p {
+    font-size: 24px;
+    max-width: 180px;
+  }
+}
+
+/* Desktop pequeno */
+@media screen and (min-width: 1024px) {
+  .section-title-categories h2 {
+    font-size: 32px;
+  }
+
+  .categories-cards {
+    gap: 16px;
+  }
+
+  .card-pacotes {
+    width: 220px;
+    height: 173px;
+  }
+
+  .categories-header {
+    gap: 20px;
+  }
+
+  .categories-header img {
+    width: 56px;
+  }
+
+  .categories-header p {
+    font-size: 20px;
+    max-width: 160px;
+  }
+}
+
+/* Desktop grande */
+@media screen and (min-width: 1200px) {
+  .card-pacotes {
+    width: 281px;
+    height: 220px;
+  }
+
+  .categories-header {
+    gap: 30px;
+  }
+
+  .categories-header img {
+    width: 60px;
+  }
+
+  .categories-header p {
+    font-size: 24px;
+    max-width: 180px;
+  }
+}
