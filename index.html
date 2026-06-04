@@ -8,9 +8,9 @@
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
       <div class="header-content">
-        <a class="logo" href="#" title="voltar para a página inicial">
+        <a class="logo" href="#" title="Voltar para a página inicial">
           <img
             class="img-mobile"
             src="./img/Logo-branca.png"
@@ -26,7 +26,7 @@
 
         <div class="navigation_menu">
           <label for="menu">
-            <img src="./img/menu.png" alt="menu" />
+            <img src="./img/menu.png" alt="Menu" />
           </label>
 
           <input type="checkbox" id="menu" hidden />
@@ -34,7 +34,12 @@
           <nav>
             <ul class="list-links">
               <li>
-                <a href="blog.html" target="_blank" title="Acessar blog">
+                <a
+                  href="blog.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Acessar blog"
+                >
                   Blog
                 </a>
               </li>
@@ -43,6 +48,7 @@
                 <a
                   href="pacotes.html"
                   target="_blank"
+                  rel="noopener noreferrer"
                   title="Acessar pacotes de viagem"
                 >
                   Pacotes de viagem
@@ -50,7 +56,12 @@
               </li>
 
               <li>
-                <a href="contato.html" target="_blank" title="Acessar contato">
+                <a
+                  href="contato.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Acessar contato"
+                >
                   Contato
                 </a>
               </li>
@@ -71,93 +82,121 @@
         </h2>
       </div>
     </section>
+
     <section class="offers">
       <div class="section-title">
         <h2>Ofertas da semana</h2>
         <hr />
       </div>
+
       <div class="offers-cards">
         <article class="card card-offer japao">
           <header>
             <p>HOTEL+AÉREO</p>
             <h3>
               Japão<br />
-              <span> R$4000</span>
+              <span>R$4000</span>
             </h3>
           </header>
+
           <footer>
-            <a href="#" class="button">Ver detalhes</a>
+            <a href="#" class="button" title="Ver detalhes da oferta Japão">
+              Ver detalhes
+            </a>
           </footer>
         </article>
+
         <article class="card card-offer san-andreas">
           <header>
             <p>HOTEL+AÉREO</p>
             <h3>
               San Andreas<br />
-              <span> R$3000</span>
+              <span>R$3000</span>
             </h3>
           </header>
+
           <footer>
-            <a href="#" class="button">Ver detalhes</a>
+            <a
+              href="#"
+              class="button"
+              title="Ver detalhes da oferta San Andreas"
+            >
+              Ver detalhes
+            </a>
           </footer>
         </article>
+
         <article class="card card-offer paraiba">
           <header>
             <p>HOTEL+AÉREO</p>
             <h3>
               Paraíba<br />
-              <span> R$1200</span>
+              <span>R$1200</span>
             </h3>
           </header>
+
           <footer>
-            <a href="#" class="button">Ver Detalhes</a>
+            <a href="#" class="button" title="Ver detalhes da oferta Paraíba">
+              Ver detalhes
+            </a>
           </footer>
         </article>
+
         <article class="card card-offer manaus">
           <header>
             <p>HOTEL+AÉREO</p>
             <h3>
               Manaus<br />
-              <span> R$1600</span>
+              <span>R$1600</span>
             </h3>
           </header>
+
           <footer>
-            <a href="#" class="button">Ver Detalhes</a>
+            <a href="#" class="button" title="Ver detalhes da oferta Manaus">
+              Ver detalhes
+            </a>
           </footer>
         </article>
       </div>
     </section>
+
     <section class="categories">
-      <a href="#" class="category-link"></a>
       <div class="section-title-categories">
         <h2>Busque por Categoria</h2>
         <hr />
       </div>
+
       <div class="categories-cards">
         <article class="card-pacotes">
           <header class="categories-header">
             <img
               src="./img/icone-pacotes-nacionais.png"
-              alt="Pacotes Nacionais"
+              alt="Pacotes nacionais"
             />
             <p>Pacotes Nacionais</p>
           </header>
         </article>
+
         <article class="card-pacotes">
           <header class="categories-header">
             <img
               src="./img/icone-pacotes-interacionais.png"
               alt="Pacotes internacionais"
             />
-            <p>Pacotes <br> Internacionais</p>
+            <p>
+              Pacotes <br />
+              Internacionais
+            </p>
           </header>
         </article>
+
         <article class="card-pacotes">
           <header class="categories-header">
-            <img src="./img/icone-transfer.png" alt="Transporte" />
+            <img src="./img/icone-transfer.png" alt="Transfer" />
             <p>Transfer</p>
           </header>
         </article>
+
         <article class="card-pacotes">
           <header class="categories-header">
             <img src="./img/icone-seguro-viagem.png" alt="Seguro viagem" />
@@ -166,33 +205,70 @@
         </article>
       </div>
     </section>
+
     <section class="destinations">
       <div class="section-title">
         <h2>Destinos Populares</h2>
         <hr />
-        <div class="destination-items">
-          <article class="item">
-            <header>
-              <div class="img-item"><img src="./img/tokyo-mobile.jpg" alt="Tokyo"></div>
-              <h4>Tokyo</h4>
-             </header>
-              <p>Tóquio é uma cidade vibrante e cosmopolita, com seus templos históricos,
-               museus de arte moderna e arranha-céus icônicos. Não perca a chance de mergulhar em sua atmosfera fascinante.</p>
-           <footer>
-            <a href="#" class="button">Ver detalhes</a>
-           </footer>
-          </article>
-          <article class="item">
-            <header>
-              <div class="img-item"><img src="./img/osaka-mobile.jpg" alt="Osaka"></div>
-              <h4>Osaka</h4>
-             </header>
-              <p>Osaka é uma cidade agitada e moderna no Japãos. A cidade é famosa por sua gastronomia deliciosa
-              e por ser um excelente ponto de partida para explorar outras cidades japonesas próximas.</p>
-           <footer>
-            <a href="#" class="button">Ver detalhes</a>
-           </footer>
-          </article>
-        </div>
+      </div>
+
+      <div class="destination-items">
+        <article class="item tokyo">
+          <header>
+            <div class="img-item">
+              <img src="./img/tokyo-mobile.jpg" alt="Tokyo" />
+            </div>
+
+            <h4>Tokyo</h4>
+          </header>
+
+          <p>
+            Tóquio é uma cidade vibrante e cosmopolita, com seus templos
+            históricos, museus de arte moderna e arranha-céus icônicos. Não
+            perca a chance de mergulhar em sua atmosfera fascinante.
+          </p>
+
+          <footer>
+            <a
+              href="#"
+              class="button"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Veja mais detalhes do destino Tokyo"
+            >
+              Ver detalhes
+            </a>
+          </footer>
+        </article>
+
+        <article class="item osaka">
+          <header>
+            <div class="img-item">
+              <img src="./img/osaka-mobile.jpg" alt="Osaka" />
+            </div>
+
+            <h4>Osaka</h4>
+          </header>
+
+          <p>
+            Osaka é uma cidade agitada e moderna no Japão. A cidade é famosa por
+            sua gastronomia deliciosa e por ser um excelente ponto de partida
+            para explorar outras cidades japonesas próximas.
+          </p>
+
+          <footer>
+            <a
+              href="#"
+              class="button"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Veja mais detalhes do destino Osaka"
+            >
+              Ver detalhes
+            </a>
+          </footer>
+        </article>
+      </div>
+    </section>
   </body>
 </html>
