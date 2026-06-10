@@ -1,8 +1,11 @@
+/* DESTINOS POPULARES */
+
 .destinations {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 72px 0;
+  padding-top: 72px;
+  padding-bottom: 32px;
 }
 
 .destination-items {
@@ -45,18 +48,12 @@
 
 .item h4 {
   width: 100%;
-  font-size: 32px;
-  line-height: 1.2;
-  font-weight: var(--titles-weight);
   margin: 24px 0 28px;
   position: static;
 }
 
 .item p {
   width: 100%;
-  font-size: 22px;
-  line-height: 1.45;
-  font-weight: var(--menu-text-weight);
   margin: 0 0 32px;
   text-align: left;
   position: static;
@@ -74,11 +71,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 18px;
 }
 
-/* Tablet */
+/* TABLET */
 @media screen and (min-width: 768px) {
+  .destinations {
+    padding-top: 72px;
+    padding-bottom: 40px;
+  }
+
   .item:nth-child(1) img {
     content: url("../img/tokyo-tablet.jpg");
   }
@@ -110,11 +111,11 @@
   .item .button {
     width: 224px;
     height: 52px;
-    margin-bottom: 24px;
+    margin-bottom: 0;
   }
 }
 
-/* Desktop */
+/* DESKTOP */
 @media screen and (min-width: 1024px) {
   .item:nth-child(1) img {
     content: url("../img/tokyo-desktop.jpg");
@@ -162,7 +163,7 @@
   }
 }
 
-/* Ultrawide */
+/* ULTRAWIDE */
 @media screen and (min-width: 1440px) {
   .destination-items {
     max-width: 1440px;
@@ -178,10 +179,11 @@
   }
 }
 
-/* Ultrawide 3440x1440 */
+/* ULTRAWIDE 3440x1440 */
 @media screen and (min-width: 2560px) {
   .destinations {
-    padding: 96px 0;
+    padding-top: 96px;
+    padding-bottom: 48px;
   }
 
   .destination-items {

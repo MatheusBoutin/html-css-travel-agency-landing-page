@@ -12,8 +12,6 @@
 .section-title-categories h2 {
   max-width: 220px;
   text-align: center;
-  font-size: 28px;
-  font-weight: var(--titles-weight);
   margin: 0;
 }
 
