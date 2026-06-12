@@ -2,10 +2,15 @@
 
 .payments .content-container {
   padding: 32px 32px 48px;
+  margin-bottom: 24px;
 }
 
 .payments .content-container .section-title {
-  margin-bottom: 32px;
+  margin-bottom: 12px;
+}
+
+.payments .content-container .text-content .content-title {
+  margin-top: 0;
 }
 
 .payments .content-container .image-gallery {
