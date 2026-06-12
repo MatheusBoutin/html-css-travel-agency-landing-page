@@ -99,25 +99,28 @@
   .payments .content-container {
     max-width: 1480px;
     margin: 0 auto;
-    padding: 96px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 80px;
+    padding: 48px 0 96px;
+    display: grid;
+    grid-template-columns: 420px 860px;
+    column-gap: 120px;
+    row-gap: 56px;
+    align-items: start;
   }
 
   .payments .content-container .section-title {
+    justify-self: center;
     margin-bottom: 0;
   }
 
   .payments .content-container .text-content {
     width: 420px;
+    align-self: start;
   }
 
   .payments .content-container .text-content .content-title {
     font-size: 32px;
     max-width: 420px;
-    margin-bottom: 24px;
+    margin: 0;
   }
 
   .payments .content-container .content-text {
