@@ -1,0 +1,15 @@
+.footer-social {
+  display: flex;
+  gap: 24px;
+  padding: 16px;
+}
+
+.footer-social a {
+  display: inline-flex;
+}
+
+.footer-social img {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
