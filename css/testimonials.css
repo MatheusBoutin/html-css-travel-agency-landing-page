@@ -9,6 +9,8 @@
 .testimonial-container {
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .testimonial-container .testimonial-card {
@@ -57,10 +59,13 @@
 @media screen and (min-width: 1440px) {
   .testimonial-container {
     flex-direction: row;
-    gap: 32px;
+    gap: 48px;
+    justify-content: center;
   }
 
   .testimonial-container .testimonial-card {
+    flex: 1;
+    max-width: 420px;
     margin-bottom: 0;
   }
 }
