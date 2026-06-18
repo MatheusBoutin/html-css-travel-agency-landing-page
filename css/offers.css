@@ -1,5 +1,6 @@
 .card-offer {
   position: relative;
+  overflow: hidden;
 }
 
 .card-offer::before {
@@ -11,9 +12,10 @@
   z-index: 0;
 }
 
-.card header,
-.card a,
-.card button {
+.card-offer header,
+.card-offer footer,
+.card-offer a,
+.card-offer button {
   position: relative;
   z-index: 1;
 }
@@ -25,40 +27,52 @@
   gap: 24px;
 }
 
-.card {
+.offers .card {
   color: var(--text-secundary-color);
   width: 312px;
   height: 288px;
   padding: 24px 16px;
-  box-sizing: border-box;
   border-radius: 16px;
   text-align: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.card header {
+.offers .card header {
   background-color: transparent;
   display: block;
   padding: 0;
 }
 
-.card header p {
+.offers .card header p {
   font-size: 20px;
   font-weight: var(--text-weight);
 }
 
-.card header h3 {
+.offers .card header h3 {
   margin: 8px 0 0;
   font-size: 40px;
   font-weight: var(--titles-weight);
 }
 
-.card header span {
+.offers .card header span {
   font-size: 32px;
   margin-top: 24px;
   display: inline-block;
+}
+
+.offers .button {
+  width: 220px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+  border-radius: 12px;
 }
 
 .japao {
@@ -79,30 +93,43 @@
 
 @media screen and (min-width: 768px) {
   .offers-cards {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  .offers .button {
+    width: 230px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  .card {
+  .offers .card {
     width: 420px;
     height: 308px;
   }
 
-  .card header h3 {
+  .offers .card header h3 {
     font-size: 48px;
   }
 
-  .card header span {
+  .offers .card header span {
     font-size: 40px;
+  }
+
+  .offers .button {
+    width: 240px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 17px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .card {
+  .offers .card {
     width: 588px;
     height: 308px;
   }

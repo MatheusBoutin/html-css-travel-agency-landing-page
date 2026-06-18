@@ -22,10 +22,20 @@
 }
 
 /* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body,
 img,
 h1,
+h2,
+h3,
 p,
+ul,
+li,
 fieldset,
 legend,
 label,
@@ -35,14 +45,58 @@ textarea,
 button {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: "Montserrat", Arial, sans-serif;
   color: var(--text-primary-color);
+  background-color: var(--background-primary-color);
 }
 
+img {
+  max-width: 100%;
+}
+
+/* ACESSIBILIDADE */
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 16px;
+  z-index: 999;
+  background-color: var(--background-primary-color);
+  color: var(--text-primary-color);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: var(--titles-weight);
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
+/* TÍTULOS E TEXTOS GLOBAIS */
 .section-title h2 {
   font-size: 28px;
   font-weight: var(--titles-weight);
@@ -78,8 +132,13 @@ body {
   background-color: var(--secundary-color);
   border-radius: 16px;
   display: inline-block;
+  text-align: center;
   text-decoration: none;
   line-height: 64px;
+}
+
+.button:focus-visible {
+  background-color: var(--primary-color);
 }
 
 @media screen and (min-width: 768px) {
