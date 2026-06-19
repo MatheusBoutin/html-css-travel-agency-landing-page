@@ -3,35 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       name="description"
-      content="Jornada viagens, uma agência apaixonada por criar viagens inesquecíveis"
+      content="Jornada Viagens é uma agência fictícia especializada em pacotes de viagem, ofertas semanais, destinos populares e experiências inesquecíveis."
+    />
+    <meta name="author" content="Matheus Boutin" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#000000" />
+
+    <link
+      rel="canonical"
+      href="https://matheusboutin.github.io/jornada-viagens"
     />
 
-    <meta name="og:title" content="Jornada viagens" />
+    <meta property="og:title" content="Jornada Viagens" />
     <meta
-      name="og:description"
-      content="Jornada viagens, uma agência apaixonada por criar viagens inesquecíveis"
+      property="og:description"
+      content="Conheça pacotes de viagem, ofertas da semana e destinos populares com a Jornada Viagens."
     />
     <meta
-      name="og:image"
+      property="og:image"
       content="https://matheusboutin.github.io/jornada-viagens/img/Logo-branco-jornada.png"
     />
-    <meta name="og:type" content="website" />
+    <meta property="og:type" content="website" />
     <meta
-      name="og:url"
+      property="og:url"
       content="https://matheusboutin.github.io/jornada-viagens"
     />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Jornada Viagens" />
 
-    <link rel="icon" href="./img/favico.svg" type="xml/svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jornada Viagens" />
+    <meta
+      name="twitter:description"
+      content="Conheça pacotes de viagem, ofertas da semana e destinos populares com a Jornada Viagens."
+    />
+    <meta
+      name="twitter:image"
+      content="https://matheusboutin.github.io/jornada-viagens/img/Logo-branco-jornada.png"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "Jornada Viagens",
+        "description": "Agência fictícia especializada em pacotes de viagem, ofertas semanais, destinos populares e experiências inesquecíveis.",
+        "url": "https://matheusboutin.github.io/jornada-viagens",
+        "image": "https://matheusboutin.github.io/jornada-viagens/img/Logo-branco-jornada.png"
+      }
+    </script>
+
+    <link rel="icon" href="./img/favico.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Jornada Viagens</title>
+
+    <title>Jornada Viagens | Pacotes, ofertas e destinos populares</title>
   </head>
 
   <body>
-    <a class="skip-link" href="#conteudo-principal"
-      >Pular para o conteúdo principal</a
-    >
+    <a class="skip-link" href="#conteudo-principal">
+      Pular para o conteúdo principal
+    </a>
 
     <header class="main-header">
       <div class="header-content">
@@ -65,9 +99,9 @@
           />
 
           <label for="menu" class="menu-label">
-            <span class="visually-hidden"
-              >Abrir ou fechar menu de navegação</span
-            >
+            <span class="visually-hidden">
+              Abrir ou fechar menu de navegação
+            </span>
             <img src="./img/menu.png" alt="" aria-hidden="true" />
           </label>
 
@@ -304,7 +338,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ver detalhes do destino Tokyo, abre em nova aba"
-                title="Veja mais detalhes do destino Tokyo"
+                title="Ver detalhes do destino Tokyo"
               >
                 Ver detalhes
               </a>
@@ -336,7 +370,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Ver detalhes do destino Osaka, abre em nova aba"
-                title="Veja mais detalhes do destino Osaka"
+                title="Ver detalhes do destino Osaka"
               >
                 Ver detalhes
               </a>
@@ -344,23 +378,27 @@
           </article>
         </div>
       </section>
+
       <section class="payments" aria-labelledby="titulo-pagamentos">
         <div class="section-title">
           <h2 id="titulo-pagamentos" class="content-title">
             Condições <br />de pagamento
           </h2>
           <hr />
+
           <div class="content-container">
             <div class="text-content">
               <h3 class="content-title">
                 Parcelamento em <br class="mobile-break" />
                 até 12x!
               </h3>
+
               <p class="content-text">
                 Viaje pagando em até 12 parcelas no cartão, à vista no crédito
                 com 5% de desconto ou no Pix com 10% de desconto!
               </p>
             </div>
+
             <div class="image-gallery">
               <div class="image bag" aria-hidden="true"></div>
               <div class="image passport" aria-hidden="true"></div>
@@ -482,7 +520,6 @@
     <div class="footer-img">
       <picture>
         <source media="(min-width: 1440px)" srcset="./img/footer-desktop.png" />
-
         <source media="(min-width: 768px)" srcset="./img/footer-tablet.png" />
 
         <img
@@ -492,42 +529,63 @@
       </picture>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" aria-labelledby="titulo-rodape">
       <div class="footer-content">
+        <h2 id="titulo-rodape" class="visually-hidden">
+          Informações finais da Jornada Viagens
+        </h2>
+
         <a
           href="#"
           class="footer-logo"
           aria-label="Voltar para a página inicial da Jornada Viagens"
+          title="Voltar para a página inicial da Jornada Viagens"
         >
           <img src="./img/Logo-branco-jornada.png" alt="" aria-hidden="true" />
         </a>
 
-        <div class="footer-info">
-          <p>Horário de atendimento: 08h - 20h</p>
-          <p>(Segunda a Sábado)</p>
+        <div class="footer-info" aria-labelledby="titulo-atendimento">
+          <h3 id="titulo-atendimento" class="visually-hidden">
+            Horário de atendimento
+          </h3>
+
+          <p>Horário de atendimento: 08h às 20h</p>
+          <p>Segunda a sábado</p>
         </div>
 
-        <p>
+        <p class="footer-copy">
           Desenvolvido por Matheus Boutin. Projeto fictício sem fins comerciais.
         </p>
 
-        <div class="footer-social-area">
-          <p>Acesse nossas redes:</p>
+        <div class="footer-social-area" aria-labelledby="titulo-redes-sociais">
+          <p id="titulo-redes-sociais">Acesse nossas redes:</p>
 
           <nav
             class="footer-social"
             aria-label="Redes sociais da Jornada Viagens"
           >
-            <a href="#" aria-label="Acessar WhatsApp da Jornada Viagens">
-              <img src="./img/whatsapp-logo.png" alt="" />
+            <a
+              href="#"
+              aria-label="Acessar WhatsApp da Jornada Viagens"
+              title="Acessar WhatsApp da Jornada Viagens"
+            >
+              <img src="./img/whatsapp-logo.png" alt="" aria-hidden="true" />
             </a>
 
-            <a href="#" aria-label="Acessar Instagram da Jornada Viagens">
-              <img src="./img/instagram-logo.png" alt="" />
+            <a
+              href="#"
+              aria-label="Acessar Instagram da Jornada Viagens"
+              title="Acessar Instagram da Jornada Viagens"
+            >
+              <img src="./img/instagram-logo.png" alt="" aria-hidden="true" />
             </a>
 
-            <a href="#" aria-label="Acessar Twitter da Jornada Viagens">
-              <img src="./img/twitter-logo.png" alt="" />
+            <a
+              href="#"
+              aria-label="Acessar Twitter da Jornada Viagens"
+              title="Acessar Twitter da Jornada Viagens"
+            >
+              <img src="./img/twitter-logo.png" alt="" aria-hidden="true" />
             </a>
           </nav>
         </div>
