@@ -1,0 +1,39 @@
+.hero-package {
+  width: 100%;
+  min-height: 404px;
+  padding: 64px 24px;
+  box-sizing: border-box;
+
+  background-image: url("../img/hero-package-img.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 100%;
+
+  color: var(--text-secundary-color);
+}
+
+.hero-package-content {
+  max-width: 312px;
+}
+
+.hero-package-content h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.25;
+}
+
+.hero-package-line {
+  width: 160px;
+  height: 3px;
+  background-color: var(--secundary-color);
+  border: none;
+  margin: 24px 0;
+}
+
+.hero-package-content p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}

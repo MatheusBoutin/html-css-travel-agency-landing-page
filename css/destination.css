@@ -1,4 +1,4 @@
-/* DESTINOS POPULARES */
+/* DESTINOS POPULARES - MOBILE */
 
 .destinations {
   display: flex;
@@ -29,13 +29,14 @@
   background-color: transparent;
   position: static;
   padding: 0;
-  margin: 0;
+  margin: 0 0 32px;
 }
 
 .img-item {
   width: 312px;
   height: 360px;
   overflow: hidden;
+  margin-bottom: 12px;
 }
 
 .img-item img {
@@ -46,26 +47,26 @@
   position: static;
 }
 
-.item h4 {
+.destinations .item h4 {
   width: 100%;
-  margin: 24px 0 28px;
+  margin: 12px 0 24px;
   position: static;
 }
 
-.item p {
+.destinations .item p {
   width: 100%;
   margin: 0 0 32px;
   text-align: left;
   position: static;
 }
 
-.item footer {
+.destinations .item footer {
   width: 100%;
   display: flex;
   justify-content: flex-start;
 }
 
-.item .button {
+.destinations .item .button {
   width: 312px;
   height: 68px;
   display: flex;
@@ -97,18 +98,18 @@
     height: 452px;
   }
 
-  .item h4 {
+  .destinations .item h4 {
     font-size: 24px;
     margin: 24px 0;
   }
 
-  .item p {
+  .destinations .item p {
     font-size: 18px;
     line-height: 1.5;
     margin: 0 0 24px;
   }
 
-  .item .button {
+  .destinations .item .button {
     width: 224px;
     height: 52px;
     margin-bottom: 0;
@@ -145,18 +146,18 @@
     height: 336px;
   }
 
-  .item h4 {
+  .destinations .item h4 {
     font-size: 24px;
     margin: 24px 0;
   }
 
-  .item p {
+  .destinations .item p {
     font-size: 18px;
     line-height: 1.5;
     margin: 0 0 24px;
   }
 
-  .item .button {
+  .destinations .item .button {
     width: 224px;
     height: 52px;
     margin-bottom: 0;
@@ -199,18 +200,18 @@
     height: 420px;
   }
 
-  .item h4 {
+  .destinations .item h4 {
     font-size: 32px;
     margin: 28px 0 24px;
   }
 
-  .item p {
+  .destinations .item p {
     font-size: 22px;
     line-height: 1.5;
     margin: 0 0 32px;
   }
 
-  .item .button {
+  .destinations .item .button {
     width: 260px;
     height: 60px;
   }
