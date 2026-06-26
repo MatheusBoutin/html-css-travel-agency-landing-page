@@ -5,7 +5,6 @@
   box-sizing: border-box;
 
   background-image: url("../img/hero-package-img.png");
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 100%;
@@ -36,4 +35,73 @@
   margin: 0;
   font-size: 18px;
   line-height: 1.6;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .hero-package {
+    min-height: clamp(500px, 60vw, 620px);
+    padding: 88px 60px;
+
+    background-image: url("../img/hero-package-img-tablet.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-package-content {
+    max-width: 480px;
+  }
+
+  .hero-package-content h1 {
+    font-size: 52px;
+    line-height: 1.2;
+  }
+
+  .hero-package-line {
+    width: 220px;
+    margin: 32px 0;
+  }
+
+  .hero-package-content p {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+  .hero-package {
+    min-height: 570px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+
+    background-image: url("../img/hero-package-img-tablet.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-package-content {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .hero-package-content h1 {
+    max-width: 480px;
+    font-size: 40px;
+    line-height: 1.25;
+  }
+
+  .hero-package-line {
+    width: 160px;
+    height: 3px;
+    margin: 24px 0 32px;
+  }
+
+  .hero-package-content p {
+    max-width: 480px;
+    font-size: 28px;
+    line-height: 1.5;
+  }
 }
