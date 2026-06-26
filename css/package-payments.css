@@ -18,6 +18,7 @@
   max-width: 344px;
   margin: 0 auto;
   padding: 0 0 48px;
+  box-sizing: border-box;
 }
 
 .package-payments-content {
@@ -89,47 +90,128 @@
 
 /* TABLET */
 @media screen and (min-width: 768px) {
+  .package-payments {
+    padding-top: 72px;
+  }
+
+  .package-payments-title {
+    margin-bottom: 48px;
+  }
+
   .package-payments-container {
-    padding: 40px 50px 48px;
-  }
-
-  .package-payments-price,
-  .package-payments-subtitle {
-    max-width: none;
-  }
-
-  .package-payments-gallery {
-    grid-template-rows: 337px 239px;
-    gap: 32px;
-  }
-
-  .package-payments-temple {
-    background-image: url(../img/package-japao-templo.png);
-  }
-
-  .package-payments-center {
-    background-image: url(../img/package-japao-centro.png);
-  }
-
-  .package-payments-gates {
-    background-image: url(../img/package-japao-portoes.png);
-  }
-}
-
-/* ACIMA DE 1440PX */
-@media screen and (min-width: 1440px) {
-  .package-payments-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    max-width: 1180px;
+    padding: 0 60px 72px;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    column-gap: 48px;
+    align-items: center;
   }
 
   .package-payments-content {
-    width: 360px;
+    width: 260px;
+  }
+
+  .package-payments-price {
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .package-payments-subtitle {
+    margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .package-payments-text {
+    margin-bottom: 32px;
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  .package-payments-footer {
+    margin-bottom: 0;
+  }
+
+  .package-payments .button {
+    width: auto;
+    min-width: 180px;
+    height: 64px;
+    padding: 0 24px;
+    font-size: 22px;
+  }
+
+  .package-payments-gallery {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px 180px;
+    gap: 24px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+  .package-payments {
+    padding-top: 64px;
+  }
+
+  .package-payments-title {
+    margin-bottom: 56px;
+  }
+
+  .package-payments-container {
+    max-width: 1165px;
+    padding: 0 0 80px;
+    display: grid;
+    grid-template-columns: 320px 790px;
+    column-gap: 55px;
+    align-items: center;
+  }
+
+  .package-payments-content {
+    width: 320px;
+  }
+
+  .package-payments-price {
+    margin-bottom: 24px;
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .package-payments-subtitle {
+    margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .package-payments-text {
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  .package-payments-footer {
+    display: none;
   }
 
   .package-payments-gallery {
     width: 790px;
+    grid-template-columns: 383.5px 383.5px;
+    grid-template-rows: 254px 182px;
+    column-gap: 23px;
+    row-gap: 24px;
+  }
+
+  .package-payments-temple {
+    background-image: url(../img/package-japao-templo-desktop.png);
+  }
+
+  .package-payments-gates {
+    background-image: url(../img/package-japao-portoes-desktop.png);
+  }
+
+  .package-payments-center {
+    background-image: url(../img/package-japao-centro-desktop.png);
   }
 }
 
@@ -137,9 +219,7 @@
 @media screen and (min-width: 2560px) {
   .package-payments-container {
     max-width: 1480px;
-    margin: 0 auto;
     padding: 48px 0 96px;
-    display: grid;
     grid-template-columns: 420px 860px;
     column-gap: 120px;
     row-gap: 56px;
@@ -147,19 +227,17 @@
   }
 
   .package-payments-title {
-    justify-self: center;
     margin-bottom: 0;
   }
 
   .package-payments-content {
     width: 420px;
-    align-self: start;
   }
 
   .package-payments-price {
-    font-size: 32px;
-    max-width: 420px;
-    margin: 0;
+    font-size: 42px;
+    line-height: 48px;
+    margin-bottom: 32px;
   }
 
   .package-payments-text {
@@ -169,7 +247,9 @@
 
   .package-payments-gallery {
     width: 860px;
+    grid-template-columns: 414px 414px;
     grid-template-rows: 300px 220px;
-    gap: 32px;
+    column-gap: 32px;
+    row-gap: 32px;
   }
 }
